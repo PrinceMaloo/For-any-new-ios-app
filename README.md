@@ -31,3 +31,29 @@ npx expo run:ios --device
 
 Open the installed app on your phone, and it will instantly load your code changes wirelessly.
 
+
+------------------------------
+## Multi-Language Naming Conventions
+
+## Frontend (React Native / Expo / TypeScript)
+
+* Folders & Files: Use kebab-case (e.g., user-profile/card-component.tsx).
+* Functions & Classes: Use PascalCase (e.g., function UserProfile(), class AuthManager).
+* React Hooks: Use camelCase prefixed with "use" (e.g., const useCustomState = () => {}).
+* Suggestion: Use camelCase for regular TypeScript utility variables and helper functions that are not React components or hooks (e.g., const formatCurrency = () => {}).
+
+## Backend (Go)
+
+* Folders & Files: Use lowercase snake_case or flat lowercase for files, and flat lowercase for packages.
+* Correction: Go officially discourages kebab-case because dashes are illegal in package names. Use user_profile.go
+* Functions, Structs, & Interfaces: Use PascalCase for exported items, and camelCase for unexported (private) items.
+* Example: type User struct {} (public) vs type user struct {} (private).
+
+## Backend (Python)
+
+* Folders: Use kebab-case (e.g., user-service/).
+* Files / Modules: Use snake_case (e.g., auth_middleware.py).
+* Classes: Use PascalCase (e.g., class DatabaseConnection:).
+* Functions & Methods: Use snake_case (e.g., def calculate_total():).
+
+
